@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 let Gateway = new Schema({
+
+   id:{type:number},
     Latitude: {
        type: number
     },
