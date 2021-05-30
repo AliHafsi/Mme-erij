@@ -7,8 +7,9 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const passport = require('passport');
 
-
+var gatewayController=require('../Backend/controllers/gateway.controller');
 const employeeRoute = require('../server/routes/employee.route');
+var gatewayController=require('../Backend/controllers/gateway.controller');
 
 const rtsIndex = require('./routes/index.router');
 
