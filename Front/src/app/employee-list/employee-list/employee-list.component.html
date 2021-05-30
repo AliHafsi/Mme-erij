@@ -1,0 +1,43 @@
+
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <h5 class="my-0 mr-md-auto font-weight-normal">Registration Form</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+      <a class="btn btn-outline-primary" routerLinkActive="active" routerLink="/employees-list">View Employees</a>
+    </nav>
+    <a class="btn btn-outline-primary" routerLinkActive="active" routerLink="/create-employee">Add Employee</a>
+  </div>
+  <div class="container">
+    
+    <p *ngIf="Employee.length <= 0" class="no-data text-center">There is no employee added yet!</p>
+  
+    
+    <table class="table table-bordered" *ngIf="Employee.length > 0">
+      <thead class="table-success">
+        <tr>
+          <th scope="col">Employee ID</th>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Designation</th>
+          <th scope="col">Phone No</th>
+          <th scope="col center">Update</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of Employee; let i = index">
+          <th scope="row">{{employee._id}}</th>
+          <td>{{employee.name}}</td>
+          <td>{{employee.email}}</td>
+          <td>{{employee.designation}}</td>
+          <td>{{employee.phoneNumber}}</td>
+          <td class="text-center edit-block">
+            <span class="edit" [routerLink]="['/edit-employee/', employee._id]">
+              <button type="button" class="btn btn-success btn-sm">Edit</button>
+            </span>
+            <span class="delete" (click)="removeEmployee(employee, i)">
+              <button type="button" class="btn btn-danger btn-sm">Delete</button>
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

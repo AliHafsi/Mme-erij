@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	
+</head>
+<body>
+<div class="banner">
+	<div class="navbar">
+
+		<img src="../../assets/img/logo.png" class="logo">
+		<ul>
+         <li> <a routerLink="/map"> Cartographie </a></li> 
+         
+         <li> <a routerLink="/calendar">Calendrier</a></li>
+         <li> <a routerLink="/create">Gestion d'utilisateurs</a></li>
+         <li> <a routerLink="/alert">Alertes</a></li>
+         <li> <a routerLink="/logout">Logout</a></li>
+         <li> <a routerLink="#">About</a></li>
+
+         
+        </ul>
+
+
+</div>
+<div class="content">
+<div class="title"> Bienvenue sur notre plateforme IOT</div>
+<p>Cette plateforme vous offrira l'opportunité de visualiser l'état des Gateways en temps réels
+</p>
+<button type="button" [routerLink]="['/Gateway']"> LORA Gateways</button>
+</div>
+</div>
+</body>
+</html>
+

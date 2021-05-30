@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "name": "Tunis Gateway",
+      "coordinates": [
+        10.61279296875522,
+        36.59788913307022
+      ],
+      "description": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwuQT3afRalcElIe2gyDx9_gtLG0FoTTn-SA&usqp=CAU"
+    },
+    {
+      "id": 4,
+      "name": "Kabul Gateway",
+      "coordinates": [
+        34.28,
+        69.11
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Paris Gateway",
+      "coordinates": [
+        48.5,
+        2.2
+      ],
+      "description": "",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwuQT3afRalcElIe2gyDx9_gtLG0FoTTn-SA&usqp=CAU"
+    }
+  ]
+}

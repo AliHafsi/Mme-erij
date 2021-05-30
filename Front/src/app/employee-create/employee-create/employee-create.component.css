@@ -1,0 +1,80 @@
+html {
+  font-size: 14px;
+  overflow-x: hidden;
+  
+ 
+}
+
+.form-control:focus {
+  box-shadow: none;
+ 
+}
+
+.register-employee {
+  margin-top: 150px;
+ 
+}
+
+.invalid-feedback {
+  display: block;
+}
+
+.edit-block span {
+  color: blue;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 4px;
+}
+
+.center {
+  text-align: center ;
+}
+
+.no-data {
+  padding: 25px 0;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-primary.dropdown-toggle:focus {
+
+  
+  box-shadow: none;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+    
+  }
+}
+
+.container {
+  max-width: 960px;
+}
+
+.pricing-header {
+  max-width: 700px;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+
+.btn-outline-primary
+{margin-left: 350px;}
+
+body{
+  background-image: url('../../../assets/img/back2.jfif');
+  background-size: cover;
+}
+.btn-primary{
+  
+  padding-right:200 px;
+
+}
+.container-fluid
+{
+  padding-left: 600px;
+  padding-top: 50px;
+}
